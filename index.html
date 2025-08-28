@@ -70,7 +70,7 @@
             </ul>
           </div>
           <figure class="hero-visual">
-            <img src="gallery/02.jpg" alt="Clinician supporting a client" />
+            <img src="gallery/26.jpg" alt="Clinician supporting a client" />
           </figure>
         </div>
       </section>
@@ -240,80 +240,102 @@
           <div class="grid-2 gap-lg">
             <div>
               <div
-                class="gallery-slider"
-                role="region"
+                class="gallery"
+                data-autoplay="6000"
                 aria-label="Photo carousel"
               >
-                <div class="gallery-slides" id="slide-track">
-                  <div class="gallery-card">
-                    <img
-                      src="gallery/26.jpg"
-                      alt="School outreach on mental health awareness."
-                    />
-                    <p class="caption">
-                      School outreach to raise mental health awareness.
-                    </p>
-                  </div>
-                  <div class="gallery-card">
-                    <img
-                      src="gallery/03.jpg"
-                      alt="Community circle for shared support."
-                    />
-                    <p class="caption">
-                      Community engagement for mental health support.
-                    </p>
-                  </div>
-                  <div class="gallery-card">
-                    <img
-                      src="gallery/35.jpg"
-                      alt="Workshop with students learning coping skills."
-                    />
-                    <p class="caption">
-                      Mental health awareness campaign in schools.
-                    </p>
-                  </div>
-                  <div class="gallery-card">
-                    <img
-                      src="gallery/02.jpg"
-                      alt="Team of clinicians and volunteers."
-                    />
-                    <p class="caption">
-                      Our team committed to community wellbeing.
-                    </p>
-                  </div>
-                  <div class="gallery-card">
-                    <img
-                      src="gallery/29.jpg"
-                      alt="Outdoor outreach event with information booths."
-                    />
-                    <p class="caption">
-                      Outreach event promoting resilience and healing.
-                    </p>
-                  </div>
-                  <div class="gallery-card">
-                    <img
-                      src="gallery/04.jpg"
-                      alt="Team celebration after outreach program."
-                    />
-                    <p class="caption">
-                      Team celebration after school outreach success.
-                    </p>
-                  </div>
+                <div class="gallery-viewport">
+                  <ul class="gallery-track" id="galleryTrack" role="list">
+                    <li class="gallery-slide is-active" id="slide-1">
+                      <img
+                        src="gallery/26.jpg"
+                        alt="School outreach on mental health awareness."
+                        loading="lazy"
+                      />
+                      <p class="caption">
+                        School outreach to raise mental health awareness.
+                      </p>
+                    </li>
+                    <li class="gallery-slide" id="slide-2">
+                      <img
+                        src="gallery/03.jpg"
+                        alt="Community circle for shared support."
+                        loading="lazy"
+                      />
+                      <p class="caption">
+                        Community engagement for mental health support.
+                      </p>
+                    </li>
+                    <li class="gallery-slide" id="slide-3">
+                      <img
+                        src="gallery/35.jpg"
+                        alt="Workshop with students learning coping skills."
+                        loading="lazy"
+                      />
+                      <p class="caption">
+                        Mental health awareness campaign in schools.
+                      </p>
+                    </li>
+                    <li class="gallery-slide" id="slide-4">
+                      <img
+                        src="gallery/02.jpg"
+                        alt="Team of clinicians and volunteers."
+                        loading="lazy"
+                      />
+                      <p class="caption">
+                        Our team committed to community wellbeing.
+                      </p>
+                    </li>
+                    <li class="gallery-slide" id="slide-5">
+                      <img
+                        src="gallery/29.jpg"
+                        alt="Outdoor outreach event with information booths."
+                        loading="lazy"
+                      />
+                      <p class="caption">
+                        Outreach event promoting resilience and healing.
+                      </p>
+                    </li>
+                    <li class="gallery-slide" id="slide-6">
+                      <img
+                        src="gallery/04.jpg"
+                        alt="Team celebration after outreach program."
+                        loading="lazy"
+                      />
+                      <p class="caption">
+                        Team celebration after school outreach success.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
-                <button
-                  class="prev"
-                  onclick="moveSlide(-1)"
-                  aria-label="Previous slide"
-                >
+
+                <button class="gallery-nav prev" aria-label="Previous slide">
                   ❮
                 </button>
-                <button
-                  class="next"
-                  onclick="moveSlide(1)"
-                  aria-label="Next slide"
-                >
+                <button class="gallery-nav next" aria-label="Next slide">
                   ❯
                 </button>
+
+                <div
+                  class="gallery-dots"
+                  role="tablist"
+                  aria-label="Slide navigation"
+                >
+                  <button
+                    role="tab"
+                    aria-controls="slide-1"
+                    aria-selected="true"
+                  ></button>
+                  <button role="tab" aria-controls="slide-2"></button>
+                  <button role="tab" aria-controls="slide-3"></button>
+                  <button role="tab" aria-controls="slide-4"></button>
+                  <button role="tab" aria-controls="slide-5"></button>
+                  <button role="tab" aria-controls="slide-6"></button>
+                </div>
+
+                <div class="gallery-progress" aria-hidden="true">
+                  <span></span>
+                </div>
               </div>
             </div>
 
@@ -330,50 +352,6 @@
                 >See stories</a
               >
             </aside>
-          </div>
-        </div>
-      </section>
-
-      <!-- Programs (feature rows give rhythm) -->
-      <section id="programs" class="section" aria-labelledby="programs-title">
-        <div class="container framed-block">
-          <header class="section-titlebar">
-            <h2 id="programs-title">Programs</h2>
-            <p>Where we focus our community work.</p>
-          </header>
-
-          <div class="feature-row">
-            <div class="feature-copy">
-              <h3>School Outreach</h3>
-              <p>
-                We partner with schools to reduce stigma and teach practical
-                coping skills.
-              </p>
-              <a class="card-link" href="service.html#outreach">Learn more</a>
-            </div>
-            <img
-              src="gallery/35.jpg"
-              alt="Workshop with students"
-              class="feature-media"
-            />
-          </div>
-
-          <hr class="divider" />
-
-          <div class="feature-row">
-            <img
-              src="gallery/29.jpg"
-              alt="Community event outdoors"
-              class="feature-media"
-            />
-            <div class="feature-copy">
-              <h3>Community Circles</h3>
-              <p>
-                Peer-led circles create safe spaces for conversation and
-                connection.
-              </p>
-              <a class="card-link" href="service.html#holistic">Learn more</a>
-            </div>
           </div>
         </div>
       </section>
@@ -571,54 +549,32 @@
     </script>
 
     <script>
-      const slideTrack = document.getElementById("slide-track");
-      let slides = slideTrack.children;
-      let currentIndex = 1; // Start at 1 because 0 will be a clone
+      (() => {
+        const g = document.querySelector("#impact .gallery");
+        if (!g) return;
+        const track = g.querySelector(".gallery-track");
+        const slides = Array.from(g.querySelectorAll(".gallery-slide"));
+        const prev = g.querySelector(".gallery-nav.prev");
+        const next = g.querySelector(".gallery-nav.next");
+        if (!track || !slides.length || !prev || !next) return;
 
-      // Clone first and last slides
-      const firstSlide = slides[0].cloneNode(true);
-      const lastSlide = slides[slides.length - 1].cloneNode(true);
+        let i = 0;
 
-      slideTrack.appendChild(firstSlide);
-      slideTrack.insertBefore(lastSlide, slides[0]);
+        function go(n, animate = true) {
+          i = (n + slides.length) % slides.length;
+          track.style.transition = animate ? "transform .35s ease" : "none";
+          /* translate by percentage so it stays responsive without recomputing widths */
+          track.style.transform = `translateX(-${i * 100}%)`;
+        }
 
-      // Update slide list after cloning
-      slides = slideTrack.children;
-      const totalSlides = slides.length;
+        prev.addEventListener("click", () => go(i - 1));
+        next.addEventListener("click", () => go(i + 1));
 
-      // Set initial position to real first slide
-      slideTrack.style.transform = `translateX(-100%)`;
-
-      function moveSlide(direction) {
-        currentIndex += direction;
-        slideTrack.style.transition = "transform 0.5s ease-in-out";
-        slideTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-        // Reset position if we moved past cloned ends
-        slideTrack.addEventListener(
-          "transitionend",
-          () => {
-            if (currentIndex === totalSlides - 1) {
-              // At cloned first (end), reset to real first
-              slideTrack.style.transition = "none";
-              currentIndex = 1;
-              slideTrack.style.transform = `translateX(-${
-                currentIndex * 100
-              }%)`;
-            }
-            if (currentIndex === 0) {
-              // At cloned last (beginning), reset to real last
-              slideTrack.style.transition = "none";
-              currentIndex = totalSlides - 2;
-              slideTrack.style.transform = `translateX(-${
-                currentIndex * 100
-              }%)`;
-            }
-          },
-          { once: true }
-        );
-      }
+        /* snap to first slide on load without animating */
+        go(0, false);
+      })();
     </script>
+
     <script>
       document.addEventListener("click", (e) => {
         if (!e.target.classList.contains("faq-q")) return;
