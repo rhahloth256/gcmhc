@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | GCMHSC</title>
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/hompage.css" />
+    <!-- <link rel="stylesheet" href="styles/details.css" /> -->
+    <!-- <link rel="stylesheet" href="styles/about.css" /> -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+  </head>
+  <body>
+    <header class="navigation-wrapper">
+      <div class="banner-wrapper">
+        <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" width="50" />
+      </div>
+      <div class="center-wrapper">
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav class="link-wrapper" id="mobileMenu">
+          <div class="nav-link"><a href="index.html">Home</a></div>
+          <div class="nav-link"><a href="about.html">About</a></div>
+          <div class="nav-link"><a href="service.html">Services</a></div>
+          <div class="nav-link"><a href="contact.html">Contact</a></div>
+          <div class="nav-link"><a href="blog.html">Resources</a></div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- Hero: split layout (copy left, image right) -->
+      <section class="hero-section hero--split" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              Glorious Community Mental Health Service Center
+            </h1>
+            <p class="lead">
+              Compassionate, accessible, holistic care for individuals and
+              communities in Northern Uganda.
+            </p>
+            <div class="hero-cta-row">
+              <a href="contact.html" class="btn btn-primary">Book a Session</a>
+              <a href="service.html" class="btn btn-outline"
+                >See Our Services</a
+              >
+              <a
+                href="donate.html"
+                class="btn btn-donate"
+                aria-label="Donate to support our work"
+                >Donate</a
+              >
+            </div>
+            <ul class="trust-badges" aria-label="At-a-glance highlights">
+              <li>
+                <i class="fas fa-user-check" aria-hidden="true"></i> Licensed
+                clinicians
+              </li>
+              <li>
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                Confidential & ethical
+              </li>
+              <li>
+                <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                Community-focused
+              </li>
+            </ul>
+          </div>
+          <figure class="hero-visual">
+            <img src="gallery/02.jpg" alt="Clinician supporting a client" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Crisis strip -->
+      <section class="crisis-strip" aria-label="Get help now">
+        <div class="container crisis-flex">
+          <p class="crisis-text">
+            <strong>Need urgent support?</strong> You are not alone.
+          </p>
+          <div class="crisis-actions">
+            <a href="tel:+256788645203" class="btn btn-contrast"
+              ><i class="fas fa-phone"></i> Call +256 788 645 203</a
+            >
+            <a href="contact.html" class="btn btn-ghost"
+              ><i class="fas fa-comments"></i> Request a call-back</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- On-page navigation (sticky within main) -->
+      <nav class="section-nav" aria-label="On this page">
+        <div class="container section-nav-inner">
+          <a href="#services" class="chip">Services</a>
+          <a href="#approach" class="chip">Approach</a>
+          <a href="#impact" class="chip">Impact</a>
+          <a href="#programs" class="chip">Programs</a>
+          <a href="#testimonials" class="chip">Testimonials</a>
+          <a href="#faqs" class="chip">FAQs</a>
+          <a
+            href="#donate"
+            class="chip chip-donate"
+            aria-label="Go to Donate section"
+            >Donate</a
+          >
+        </div>
+      </nav>
+
+      <!-- Services: 2-column with sticky sidebar -->
+      <section
+        id="services"
+        class="section section-alt"
+        aria-labelledby="services-title"
+      >
+        <div class="container framed-block">
+          <header class="section-titlebar">
+            <h2 id="services-title">How We Help</h2>
+            <p>Evidence-based support for your healing journey.</p>
+          </header>
+
+          <div class="grid-2 gap-lg">
+            <aside class="aside sticky">
+              <a href="contact.html" class="btn btn-contrast btn-block"
+                >Talk to Intake</a
+              >
+              <ul class="aside-list">
+                <li><a href="service.html#therapy">Therapy</a></li>
+                <li><a href="service.html#outreach">Outreach</a></li>
+                <li><a href="service.html#crisis">Crisis</a></li>
+                <li><a href="service.html#holistic">Holistic</a></li>
+                <li><a href="service.html#youth">Youth</a></li>
+              </ul>
+            </aside>
+
+            <div>
+              <div class="card-grid card-grid--roomy">
+                <article class="card">
+                  <i
+                    class="fas fa-hand-holding-heart card-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <h3>Compassionate Therapy</h3>
+                  <p>Individual and group sessions tailored to your needs.</p>
+                  <a href="service.html#therapy" class="card-link"
+                    >Learn more</a
+                  >
+                </article>
+                <article class="card">
+                  <i class="fas fa-users card-icon" aria-hidden="true"></i>
+                  <h3>Community Outreach</h3>
+                  <p>
+                    Awareness, resilience, and stigma reduction across our
+                    region.
+                  </p>
+                  <a href="service.html#outreach" class="card-link"
+                    >Learn more</a
+                  >
+                </article>
+                <article class="card">
+                  <i class="fas fa-headset card-icon" aria-hidden="true"></i>
+                  <h3>Crisis Intervention</h3>
+                  <p>
+                    Rapid response and safety planning when life feels
+                    overwhelming.
+                  </p>
+                  <a href="service.html#crisis" class="card-link">Learn more</a>
+                </article>
+                <article class="card">
+                  <i
+                    class="fas fa-user-shield card-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <h3>Confidential & Professional</h3>
+                  <p>
+                    Judgment-free, culturally competent care by trained
+                    providers.
+                  </p>
+                  <a href="about.html#team" class="card-link">Meet the team</a>
+                </article>
+                <article class="card">
+                  <i class="fas fa-spa card-icon" aria-hidden="true"></i>
+                  <h3>Holistic Care</h3>
+                  <p>We support the whole person—mind, body, and community.</p>
+                  <a href="service.html#holistic" class="card-link"
+                    >Learn more</a
+                  >
+                </article>
+                <article class="card">
+                  <i class="fas fa-child card-icon" aria-hidden="true"></i>
+                  <h3>Child & Adolescent Support</h3>
+                  <p>School programs and family-centered interventions.</p>
+                  <a href="service.html#youth" class="card-link">Learn more</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Approach -->
+      <section id="approach" class="section" aria-labelledby="approach-title">
+        <div class="container framed-block">
+          <header class="section-titlebar">
+            <h2 id="approach-title">Our Approach</h2>
+            <p>Practical tools grounded in compassion and science.</p>
+          </header>
+          <div class="pill-grid">
+            <div class="pill">
+              <i class="fas fa-brain"></i> CBT & Solution-Focused Therapy
+            </div>
+            <div class="pill">
+              <i class="fas fa-people-group"></i> Group & Family Sessions
+            </div>
+            <div class="pill">
+              <i class="fas fa-seedling"></i> Trauma-informed, Culturally
+              Responsive Care
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact Gallery + text sidebar -->
+      <section
+        id="impact"
+        class="section section-alt"
+        aria-labelledby="impact-title"
+      >
+        <div class="container framed-block">
+          <header class="section-titlebar">
+            <h2 id="impact-title">Our Impact in Action</h2>
+            <p>
+              Snapshots from outreach, school programs, and community healing.
+            </p>
+          </header>
+
+          <div class="grid-2 gap-lg">
+            <div>
+              <div
+                class="gallery-slider"
+                role="region"
+                aria-label="Photo carousel"
+              >
+                <div class="gallery-slides" id="slide-track">
+                  <div class="gallery-card">
+                    <img
+                      src="gallery/26.jpg"
+                      alt="School outreach on mental health awareness."
+                    />
+                    <p class="caption">
+                      School outreach to raise mental health awareness.
+                    </p>
+                  </div>
+                  <div class="gallery-card">
+                    <img
+                      src="gallery/03.jpg"
+                      alt="Community circle for shared support."
+                    />
+                    <p class="caption">
+                      Community engagement for mental health support.
+                    </p>
+                  </div>
+                  <div class="gallery-card">
+                    <img
+                      src="gallery/35.jpg"
+                      alt="Workshop with students learning coping skills."
+                    />
+                    <p class="caption">
+                      Mental health awareness campaign in schools.
+                    </p>
+                  </div>
+                  <div class="gallery-card">
+                    <img
+                      src="gallery/02.jpg"
+                      alt="Team of clinicians and volunteers."
+                    />
+                    <p class="caption">
+                      Our team committed to community wellbeing.
+                    </p>
+                  </div>
+                  <div class="gallery-card">
+                    <img
+                      src="gallery/29.jpg"
+                      alt="Outdoor outreach event with information booths."
+                    />
+                    <p class="caption">
+                      Outreach event promoting resilience and healing.
+                    </p>
+                  </div>
+                  <div class="gallery-card">
+                    <img
+                      src="gallery/04.jpg"
+                      alt="Team celebration after outreach program."
+                    />
+                    <p class="caption">
+                      Team celebration after school outreach success.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="prev"
+                  onclick="moveSlide(-1)"
+                  aria-label="Previous slide"
+                >
+                  ❮
+                </button>
+                <button
+                  class="next"
+                  onclick="moveSlide(1)"
+                  aria-label="Next slide"
+                >
+                  ❯
+                </button>
+              </div>
+            </div>
+
+            <aside class="aside">
+              <ul class="keypoints">
+                <li>School programs across Lira & surrounding districts</li>
+                <li>Community resilience workshops</li>
+                <li>Crisis response partnerships</li>
+              </ul>
+              <a
+                href="blog.html"
+                class="btn btn-outline"
+                style="margin-top: 0.6rem"
+                >See stories</a
+              >
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Programs (feature rows give rhythm) -->
+      <section id="programs" class="section" aria-labelledby="programs-title">
+        <div class="container framed-block">
+          <header class="section-titlebar">
+            <h2 id="programs-title">Programs</h2>
+            <p>Where we focus our community work.</p>
+          </header>
+
+          <div class="feature-row">
+            <div class="feature-copy">
+              <h3>School Outreach</h3>
+              <p>
+                We partner with schools to reduce stigma and teach practical
+                coping skills.
+              </p>
+              <a class="card-link" href="service.html#outreach">Learn more</a>
+            </div>
+            <img
+              src="gallery/35.jpg"
+              alt="Workshop with students"
+              class="feature-media"
+            />
+          </div>
+
+          <hr class="divider" />
+
+          <div class="feature-row">
+            <img
+              src="gallery/29.jpg"
+              alt="Community event outdoors"
+              class="feature-media"
+            />
+            <div class="feature-copy">
+              <h3>Community Circles</h3>
+              <p>
+                Peer-led circles create safe spaces for conversation and
+                connection.
+              </p>
+              <a class="card-link" href="service.html#holistic">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donate banner -->
+      <section id="donate" class="donate-banner" aria-labelledby="donate-title">
+        <div class="container donate-inner">
+          <div>
+            <h2 id="donate-title">Support Community Mental Health</h2>
+            <p>
+              Your gift helps fund therapy for low-income clients and school
+              outreach.
+            </p>
+          </div>
+          <a
+            href="donate.html"
+            class="btn btn-donate-lg"
+            aria-label="Donate now"
+            >Donate</a
+          >
+        </div>
+      </section>
+
+      <!-- Appointment CTA -->
+      <section class="cta-banner" aria-labelledby="cta-title">
+        <div class="cta-inner">
+          <h2 id="cta-title">Ready to start your healing journey?</h2>
+          <a href="contact.html" class="btn btn-primary">Book a Session</a>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section
+        id="testimonials"
+        class="section"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container framed-block">
+          <header class="section-titlebar">
+            <h2 id="testimonials-title">What Our Clients Say</h2>
+          </header>
+          <div class="testimonials">
+            <blockquote class="testimonial" aria-label="Testimonial from Sarah">
+              <p>
+                “I felt heard and supported during every session. Glorious
+                helped me rediscover hope.”
+              </p>
+              <cite>— Sarah, 34</cite>
+            </blockquote>
+            <blockquote
+              class="testimonial"
+              aria-label="Testimonial from Patrick"
+            >
+              <p>
+                “Their outreach program changed how our village understands
+                mental health.”
+              </p>
+              <cite>— Patrick, Community Leader</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section
+        id="faqs"
+        class="section section-alt"
+        aria-labelledby="faq-title"
+      >
+        <div class="container framed-block">
+          <header class="section-titlebar">
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+          </header>
+          <div class="faq">
+            <button class="faq-q" aria-expanded="false" aria-controls="a1">
+              How do I book my first appointment?
+            </button>
+            <div id="a1" class="faq-a" hidden>
+              <p>
+                Use the “Book a Session” button or call us; we’ll match you with
+                the right clinician and schedule a time.
+              </p>
+            </div>
+
+            <button class="faq-q" aria-expanded="false" aria-controls="a2">
+              Do you offer remote/phone sessions?
+            </button>
+            <div id="a2" class="faq-a" hidden>
+              <p>
+                Yes. We provide in-person, phone, and secure online sessions
+                based on your preference.
+              </p>
+            </div>
+
+            <button class="faq-q" aria-expanded="false" aria-controls="a3">
+              Is my information confidential?
+            </button>
+            <div id="a3" class="faq-a" hidden>
+              <p>
+                Absolutely. We follow strict confidentiality and ethical
+                guidelines. Learn more in our Privacy Policy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-wrapper">
+      <div class="banner-wrapper">
+        <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" />
+        <p>You are not alone. We are here for you.</p>
+        <div class="icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="trademark">
+          &copy; 2025 Glorious CMHSC | All rights reserved
+        </div>
+      </div>
+
+      <div class="footer-extras">
+        <div class="phonenumber-wrapper">
+          <div class="right-wrapper">
+            <div class="locate-wrapper">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="address-wrapper">
+              <h3>Contact Us</h3>
+              <div>
+                <a href="tel:+256788645203">+256 788 645 203</a><br />
+                <a href="tel:+256778412136">+256 778 412 136</a><br />
+                <a href="mailto:gcmhsc@gmail.com">gcmhsc@gmail.com</a><br />
+                <a href="mailto:raysokello@gmail.com">raysokello@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="newsletter-signup">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form action="https://formspree.io/f/mwpozgvb" method="POST">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="address-wrapper-container">
+          <div class="right-wrapper">
+            <div class="locate-wrapper">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="address-wrapper">
+              <h3>Visit Us</h3>
+              <a href="contact.html">Kichope Cell<br />Lira City, Uganda</a>
+            </div>
+          </div>
+          <div class="hour">Open: Mon–Sat | 8:30AM – 5PM<br />Closed: Sun</div>
+        </div>
+      </div>
+
+      <div
+        class="footer-bottom"
+        style="width: 100%; margin-top: 30px; text-align: center"
+      >
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to Top</a>
+      </div>
+    </footer>
+
+    <!-- This is for hidding the menu to hamburger format in phones -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
+
+    <script>
+      const slideTrack = document.getElementById("slide-track");
+      let slides = slideTrack.children;
+      let currentIndex = 1; // Start at 1 because 0 will be a clone
+
+      // Clone first and last slides
+      const firstSlide = slides[0].cloneNode(true);
+      const lastSlide = slides[slides.length - 1].cloneNode(true);
+
+      slideTrack.appendChild(firstSlide);
+      slideTrack.insertBefore(lastSlide, slides[0]);
+
+      // Update slide list after cloning
+      slides = slideTrack.children;
+      const totalSlides = slides.length;
+
+      // Set initial position to real first slide
+      slideTrack.style.transform = `translateX(-100%)`;
+
+      function moveSlide(direction) {
+        currentIndex += direction;
+        slideTrack.style.transition = "transform 0.5s ease-in-out";
+        slideTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Reset position if we moved past cloned ends
+        slideTrack.addEventListener(
+          "transitionend",
+          () => {
+            if (currentIndex === totalSlides - 1) {
+              // At cloned first (end), reset to real first
+              slideTrack.style.transition = "none";
+              currentIndex = 1;
+              slideTrack.style.transform = `translateX(-${
+                currentIndex * 100
+              }%)`;
+            }
+            if (currentIndex === 0) {
+              // At cloned last (beginning), reset to real last
+              slideTrack.style.transition = "none";
+              currentIndex = totalSlides - 2;
+              slideTrack.style.transform = `translateX(-${
+                currentIndex * 100
+              }%)`;
+            }
+          },
+          { once: true }
+        );
+      }
+    </script>
+    <script>
+      document.addEventListener("click", (e) => {
+        if (!e.target.classList.contains("faq-q")) return;
+        const btn = e.target;
+        const targetId = btn.getAttribute("aria-controls");
+        const panel = document.getElementById(targetId);
+        const open = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!open));
+        panel.hidden = open;
+      });
+    </script>
+  </body>
+</html>

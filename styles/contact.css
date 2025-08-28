@@ -1,0 +1,147 @@
+/* ========== CONTACT.CSS (Contact Page Specific Styles) ========== */
+
+.contact-booking-section {
+    padding: 60px 5vw;
+    background-color: var(--section-bg);
+}
+
+.contact-booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-details,
+.booking-form {
+    flex: 1 1 45%;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.contact-details h2,
+.booking-form h2 {
+    color: orange;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contact-details h4 {
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.contact-details a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-details iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking-form button {
+    margin-top: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #b28b2f;
+}
+
+@media (max-width: 1024px) {
+    .contact-booking-section {
+        padding: 50px 4vw;
+    }
+
+    .contact-booking-container {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-booking-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contact-details,
+    .booking-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-details iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-booking-section {
+        padding: 40px 20px;
+    }
+
+    .contact-details h4,
+    .booking-form label {
+        font-size: 14px;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .booking-form button {
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+}

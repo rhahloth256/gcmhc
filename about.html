@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+  </head>
+  <script>
+    function toggleAboutMenu() {
+      const menu = document.getElementById("aboutMenu");
+      menu.classList.toggle("show");
+    }
+  </script>
+
+  <body>
+    <div class="skewed-header">
+      <div
+        class="header-bg"
+        style="background-image: url(backgrounds/about-us.jpg)"
+      ></div>
+      <div class="skewed-header-wrapper">
+        <div class="skewed-header-content">
+          <div class="about-us"><h1>About Us</h1></div>
+
+          <!-- Hamburger icon for mobile -->
+          <div class="hamburger" onclick="toggleAboutMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <!-- Navigation links -->
+          <div class="nav-link" id="aboutMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Resources</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-section">
+      <div class="middle-section-detail">
+        <p>
+          At <strong>Glorious Community Mental Health Service Center</strong>,
+          we are dedicated to promoting mental well-being through compassionate,
+          accessible, and professional psychosocial support. We believe that
+          everyone deserves a safe space to heal, grow, and thrive.
+        </p>
+        <h2>Our Mission</h2>
+        <p>
+          To provide high quality, specialized and affordable psychotherapy,
+          psychosocial, occupational and vocational skills to vulnerable
+          communities. <br />
+          To promote positive response to mental health challenges in
+          communities, community empowerment, research, innovation and advocacy.
+        </p>
+        <h2>Our Vision</h2>
+        <p>
+          Transforming lives by providing accessible, innovative and holistic
+          mental health services that foster hope, resilience and recovery.
+        </p>
+        <h2>Our Services</h2>
+        <ul>
+          <li>Counseling & Psychotherapy</li>
+          <li>Crisis Intervention</li>
+          <li>Community Outreach & Awareness</li>
+          <li>Workshops & Training</li>
+          <li>Addiction Treatment and Rehabilitation</li>
+        </ul>
+        <h2>Why Choose Glorious?</h2>
+        <ul>
+          <li>
+            <strong>Compassionate Care</strong> – We listen, support, and guide
+            with empathy.
+          </li>
+          <li>
+            <strong>Professional & Confidential</strong> – Our team ensures a
+            safe, judgment-free environment.
+          </li>
+          <li>
+            <strong>Community-Centered Approach</strong> – We collaborate with
+            local networks for stronger support.
+          </li>
+        </ul>
+        <p>
+          <em
+            >You are not alone. We are here for you. Let’s work together towards
+            a healthier, happier future.</em
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <section
+      class="middle-section"
+      style="background-color: #f9f9f9; padding: 40px 20px"
+    >
+      <div class="middle-section-detail">
+        <h2 style="text-align: center; color: #11122b">
+          Meet Our Dedicated Team
+        </h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 40px">
+          At Glorious Community Mental Health Service Center, our people are our
+          greatest strength. Get to know the passionate professionals working to
+          support and empower our community.
+        </p>
+
+        <!-- Executive Director -->
+        <div style="text-align: center; margin-bottom: 50px">
+          <img
+            src="./people/01.jpg"
+            alt="Obol Peter"
+            style="
+              width: 180px;
+              border-radius: 50%;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            "
+          />
+          <p style="font-weight: bold; margin-top: 10px">Obol Peter</p>
+          <p style="font-style: italic; color: #666">Executive Director</p>
+        </div>
+
+        <!-- Staff Members -->
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            gap: 30px;
+          "
+        >
+          <!-- Olila Brian -->
+          <div style="text-align: center; width: 220px">
+            <img
+              src="./people/12.jpg"
+              alt="Olila Brian"
+              style="width: 100%; border-radius: 50%"
+            />
+            <p style="font-weight: bold; margin-top: 10px">Olila Brian</p>
+            <p style="font-style: italic; color: #666">Psychologist</p>
+          </div>
+
+          <!-- Nyang Maureen -->
+          <div style="text-align: center; width: 220px">
+            <img
+              src="./people/13.jpg"
+              alt="Nyang Maureen"
+              style="width: 100%; border-radius: 50%"
+            />
+            <p style="font-weight: bold; margin-top: 10px">Nyang Maureen</p>
+            <p style="font-style: italic; color: #666">
+              Medical Clinical Officer
+            </p>
+          </div>
+
+          <!-- Angora Amos -->
+          <div style="text-align: center; width: 220px">
+            <img
+              src="./people/14.jpg"
+              alt="Angora Amos"
+              style="width: 100%; border-radius: 50%"
+            />
+            <p style="font-weight: bold; margin-top: 10px">Angora Amos</p>
+            <p style="font-style: italic; color: #666">Psychiatrist</p>
+          </div>
+
+          <!-- Tino Shamim -->
+          <div style="text-align: center; width: 220px">
+            <img
+              src="./people/15.jpg"
+              alt="Tino Shamim"
+              style="width: 100%; border-radius: 50%"
+            />
+            <p style="font-weight: bold; margin-top: 10px">Tino Shamim</p>
+            <p style="font-style: italic; color: #666">Counselor</p>
+          </div>
+
+          <!-- Akena Denis -->
+          <div style="text-align: center; width: 220px">
+            <img
+              src="./people/16.jpg"
+              alt="Akena Denis"
+              style="width: 100%; border-radius: 10%"
+            />
+            <p style="font-weight: bold; margin-top: 10px">Akena Denis</p>
+            <p style="font-style: italic; color: #666">Peer Coordinator</p>
+          </div>
+
+          <!-- Amuge Whitney -->
+          <div style="text-align: center; width: 220px">
+            <img
+              src="./people/17.jpg"
+              alt="Amuge Whitney"
+              style="width: 100%; border-radius: 10%"
+            />
+            <p style="font-weight: bold; margin-top: 10px">Amuge Whitney</p>
+            <p style="font-style: italic; color: #666">Peer Educator</p>
+          </div>
+
+          <!-- Okello Raymond -->
+          <div style="text-align: center; width: 220px">
+            <img
+              src="./people/11.jpg"
+              alt="Okello Raymond"
+              style="width: 100%; border-radius: 10%"
+            />
+            <p style="font-weight: bold; margin-top: 10px">Rhahloth</p>
+            <p style="font-style: italic; color: #666">Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-wrapper">
+      <div class="banner-wrapper">
+        <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" />
+        <p>You are not alone. We are here for you.</p>
+        <div class="icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="trademark">
+          &copy; 2025 Glorious CMHSC | All rights reserved
+        </div>
+      </div>
+
+      <div class="footer-extras">
+        <div class="phonenumber-wrapper">
+          <div class="right-wrapper">
+            <div class="locate-wrapper">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="address-wrapper">
+              <h3>Contact Us</h3>
+              <div>
+                <a href="tel:+256788645203">+256 788 645 203</a><br />
+                <a href="tel:+256778412136">+256 778 412 136</a><br />
+                <a href="mailto:gcmhsc@gmail.com">gcmhsc@gmail.com</a><br />
+                <a href="mailto:raysokello@gmail.com">raysokello@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="newsletter-signup">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form action="https://formspree.io/f/mwpozgvb" method="POST">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="address-wrapper-container">
+          <div class="right-wrapper">
+            <div class="locate-wrapper">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="address-wrapper">
+              <h3>Visit Us</h3>
+              <a href="contact.html">Kichope Cell<br />Lira City, Uganda</a>
+            </div>
+          </div>
+          <div class="hour">Open: Mon–Sat | 8:30AM – 5PM<br />Closed: Sun</div>
+        </div>
+      </div>
+
+      <div
+        class="footer-bottom"
+        style="width: 100%; margin-top: 30px; text-align: center"
+      >
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to Top</a>
+      </div>
+    </footer>
+  </body>
+</html>

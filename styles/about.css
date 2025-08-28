@@ -1,0 +1,158 @@
+/* ========== ABOUT.CSS (About Page Specific Styles) ========== */
+
+/* Shared Wrappers */
+.middle-section,
+.last-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: var(--section-bg);
+}
+
+.middle-section-detail {
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Section */
+.skewed-header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background-image: url('../backgrounds/about-us.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-8deg);
+  transform-origin: top left;
+  filter: brightness(40%);
+}
+
+.skewed-header-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.skewed-header-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--nav-link-color);
+}
+
+.nav-link {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link a {
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link a:hover {
+  background-color: var(--accent-color);
+  color: #111;
+}
+
+.about-us {
+  background-color: var(--accent-color);
+  color: #111;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+#CEO {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10%;
+  border: 2px solid #cea135;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.middle-section-detail h2 {
+  color: var(--primary-color);
+  margin-top: 30px;
+}
+
+.middle-section-detail p,
+.middle-section-detail ul {
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.middle-section-detail ul {
+  padding-left: 20px;
+}
+
+/* Last Section Grid */
+.squares {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  gap: 40px;
+}
+
+.square {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.square img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.square .par {
+  padding: 30px;
+}
+
+.square .par h1 {
+  color: var(--primary-color);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.square .par p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
