@@ -810,3 +810,44 @@ h3 {
         letter-spacing: -.01em;
     }
 }
+
+/* --- Section nav: desktop/tablet --- */
+:root {
+    --nav-offset: 4.5rem;
+    /* match your header height */
+}
+
+.section-nav {
+    position: sticky;
+    top: var(--nav-offset);
+    z-index: 4;
+    background: #fff;
+    border-block: 1px solid var(--border);
+}
+
+.section-nav .section-nav-inner {
+    display: flex;
+    align-items: center;
+    gap: .5rem .75rem;
+    padding: .5rem 0;
+    flex-wrap: wrap;
+}
+
+/* Stronger focus for accessibility */
+.chip:focus-visible,
+.faq-q:focus-visible,
+.btn:focus-visible {
+    outline: 3px solid var(--ring);
+    outline-offset: 2px;
+}
+
+/* Phones: turn OFF sticky */
+@media (max-width: 768px) {
+    .section-nav {
+        position: static;
+        /* ✅ no sticky on small screens */
+        top: auto;
+        border-block: 0;
+        /* optional: remove the line if you don’t want it */
+    }
+}

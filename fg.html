@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/homepage.css" />
+    <link rel="stylesheet" href="styles/hompage.css" />
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
@@ -18,31 +18,23 @@
   </script>
 
   <body>
-    <div class="skewed-header">
-      <div
-        class="header-bg"
-        style="background-image: url(backgrounds/about-us.jpg)"
-      ></div>
-      <div class="skewed-header-wrapper">
-        <div class="skewed-header-content">
-          <div class="about-us"><h1>About Us</h1></div>
-
-          <!-- Hamburger icon for mobile -->
-          <div class="hamburger" onclick="toggleAboutMenu()">
-            <i class="fas fa-bars"></i>
-          </div>
-
-          <!-- Navigation links -->
-          <div class="nav-link" id="aboutMenu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="service.html">Services</a>
-            <a href="contact.html">Contact</a>
-            <a href="blog.html">Resources</a>
-          </div>
-        </div>
+    <header class="navigation-wrapper">
+      <div class="banner-wrapper">
+        <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" width="50" />
       </div>
-    </div>
+      <div class="center-wrapper">
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav class="link-wrapper" id="mobileMenu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="service.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Resources</a>
+        </nav>
+      </div>
+    </header>
 
     <div class="middle-section">
       <div class="middle-section-detail">
@@ -113,15 +105,7 @@
         </p>
 
         <!-- Executive Director -->
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 1.2rem;
-            justify-content: center;
-            align-items: center;
-          "
-        >
+        <div style="text-align: center; margin-bottom: 50px">
           <img
             src="./people/01.jpg"
             alt="Obol Peter"
